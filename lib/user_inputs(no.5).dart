@@ -154,6 +154,20 @@ class _UserInputsState extends State<UserInputs> {
                             TextStyle(color: Colors.black45, fontSize: 13),
                       ),
                     ),
+                    TextField(
+                      onChanged: (value) {
+                        setState(() {
+                          skills = value;
+                        });
+                      },
+                      decoration: InputDecoration(
+                        labelText: 'Github',
+                        labelStyle: TextStyle(color: Colors.teal, fontSize: 13),
+                        hintText: 'Enter github account link',
+                        hintStyle:
+                            TextStyle(color: Colors.black45, fontSize: 13),
+                      ),
+                    ),
 
                     TextField(
                       onChanged: (value) {
